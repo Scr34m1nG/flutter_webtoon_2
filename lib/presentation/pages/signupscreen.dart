@@ -81,18 +81,12 @@ class _screenSignUpScreenState extends State<signUpScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
-        title: Row(
-          children: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 205),
-              child: Image.asset(
-                'assets/images/webtoon.jpg',
-                width: 40,
-                height: 40,
-              ),
-            ),
-          ],
+        title: Image.asset(
+          'assets/images/webtoon.jpg',
+          width: 40,
+          height: 40,
         ),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Container(
